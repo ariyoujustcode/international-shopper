@@ -25,7 +25,8 @@ html {
   max-width: 1400px;
   padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
   margin: 0 auto;
   width: 100%;
@@ -34,21 +35,23 @@ html {
 .navbar {
   width: 100%;
   overflow: hidden;
-  height: 8rem;
+  min-height: 100vh;
   background-color: var(--primary-dark);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .logo {
   text-decoration: none;
   display: block;
+  margin-top: -8rem;
 }
 
 .country-btn {
-  width: 6rem;
-  height: 3.6rem;
+  width: 26.6rem;
+  height: 15rem;
   display: block;
   text-align: center;
   cursor: pointer;
@@ -58,7 +61,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.3s;
-  margin-right: 1rem;
+  margin-top: 10rem;
 }
 
 .country-btn:hover {
@@ -69,7 +72,7 @@ html {
 .popup {
   position: absolute;
   width: 300px;
-  height: 360px;
+  height: 550px;
   background: var(--primary-bg);
   border: 1px solid var(--primary-light);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -82,7 +85,7 @@ html {
   border: 10px solid var(--primary-bg);
   font-size: 1.4rem;
   max-width: 350px;
-  margin-bottom: 58%;
+  margin-bottom: 130%;
   outline: 1px solid var(--primary-light);
 }
 
@@ -132,11 +135,14 @@ html {
   position: absolute;
   right: 30%;
   font-weight: 700;
-  top: 68%;
+  top: 75%;
   display: none;
 }
 
-
-
-
+#flag-below {
+  font-size: 2.2rem;
+  color: var(--primary-bg);
+  max-width: 290px;
+  text-align: center;
+}
 

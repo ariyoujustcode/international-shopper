@@ -22,8 +22,6 @@ function fetchFlagAndCurrency(countryName) {
       const flagUrl = data[0].flags.png; // Assuming the API response contains flag information
       flagButton.style.backgroundImage = `url('${flagUrl}')`;
 
-      console.log("API Data:", data);
-
       // Get the currency information
       const currencyInfo = data[0].currencies;
       if (currencyInfo) {
