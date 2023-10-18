@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: var(--primary-bg);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-dark: #111111;
+  --secondary-dark: #333333;
+  --primary-bg: #ffffff;
+  --primary-light: #888888;
+  --blue: #318de4;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  height: 8rem;
+  background-color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  display: block;
+}
+
+.country-btn {
+  width: 6rem;
+  height: 3.6rem;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  outline: 2px solid var(--primary-light);
+  border: 2px solid var(--primary-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s;
+  margin-right: 1rem;
+}
+
+.country-btn:hover {
+  outline: 2px solid var(--blue);
+}
+
+/* CSS to style the pop-up */
+.popup {
+  position: absolute;
+  width: 300px;
+  height: 360px;
+  background: var(--primary-bg);
+  border: 1px solid var(--primary-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  transition: 0.3s;
+}
+
+#countrySelect {
+  width: 100%;
+  border: 10px solid var(--primary-bg);
+  font-size: 1.4rem;
+  max-width: 350px;
+  margin-bottom: 58%;
+  outline: 1px solid var(--primary-light);
+}
+
+#selectBtn {
+  width: 100%;
+  border: 1px solid var(--secondary-dark);
+  background-color: var(--secondary-dark);
+  color: var(--primary-bg);
+  padding: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+/* CSS for the close button (X) */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 2.6rem;
+  cursor: pointer;
+  color: var(--secondary-dark);
+}
+
+#shopIn {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--secondary-dark);
+  margin-bottom: 2rem;
+}
+
+#currencyHeading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--secondary-dark);
+  margin-bottom: 3rem;
+}
+
+#currencySpan {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--blue);
+  position: absolute;
+  right: 30%;
+  font-weight: 700;
+  top: 68%;
+  display: none;
+}
+
+
+
+
+
